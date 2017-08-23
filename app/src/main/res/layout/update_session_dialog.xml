@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/rel_header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorAccent">
+
+        <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+            android:id="@+id/tv_city_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UPDATE SESSION"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:customTypeface="@string/font_bold"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+    <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+        android:id="@+id/tv_select_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Date"
+        app:customTypeface="@string/font_bold"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"/>
+
+
+    <!--<RelativeLayout
+        android:id="@+id/rel_session"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <com.nedfptra.Utility.TypefaceTextView
+            android:id="@+id/tv_session_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@color/darkgrey"
+            app:customTypeface="@string/font_regular"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+        <Spinner
+            android:id="@+id/sp_session"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_centerHorizontal="true">
+        </Spinner>
+
+        <ImageView
+            android:id="@+id/btn_down"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:src="@drawable/downarrow"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/tv_session_show"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>-->
+
+
+    <RelativeLayout
+        android:id="@+id/rel_morning_session"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="20dp">
+
+        <CheckBox
+            android:id="@+id/chk_morning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"/>
+
+        <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Morning"
+            android:layout_toRightOf="@id/chk_morning"
+            android:layout_centerVertical="true"
+            android:textSize="15dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_afternoon_session"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="5dp">
+
+        <CheckBox
+            android:id="@+id/chk_afternoon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" />
+
+        <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/chk_afternoon"
+            android:text="Afternoon"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_evening_session"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="5dp">
+
+        <CheckBox
+            android:id="@+id/chk_evening"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"/>
+
+        <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Evening"
+            android:layout_toRightOf="@id/chk_evening"
+            android:layout_centerVertical="true"
+            android:textSize="15dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <com.thunderbird.chennai.fapapp.Utility.EditTextK
+            android:id="@+id/edt_event"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter event details"
+            app:fontNameET="@string/font_regular"
+            android:background="@android:color/transparent"
+            android:inputType="text"
+            android:lines="1"/>
+
+        <View
+            android:layout_below="@+id/edt_event"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"/>
+    </RelativeLayout>
+
+
+
+    <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/btn_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        app:customTypeface="@string/font_bold"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:background="@drawable/butn1"
+        android:textColor="@android:color/white"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
+
+
+</LinearLayout>

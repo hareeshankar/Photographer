@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_registation_one"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <RelativeLayout
+        android:id="@+id/rel_header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/black">
+
+        <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            app:customTypeface="@string/font_regular"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+        <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+            android:id="@+id/tv_city_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="REGISTRATION"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:customTypeface="@string/font_bold" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rel_header"
+        android:background="@drawable/bg1">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:isScrollContainer="false">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/rel_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/profile_image"
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+                        android:src="@drawable/avtar"
+                        app:civ_border_width="1dp"
+                        app:civ_border_color="@color/darkgrey"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"/>
+
+
+                    <RelativeLayout
+                        android:id="@+id/rel_first_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_below="@+id/profile_image">
+                        <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+                            android:id="@+id/tv_first_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:customTypeface="@string/font_bold"
+                            android:text="First Name"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/white"/>
+
+                        <com.thunderbird.chennai.fapapp.Utility.EditTextK
+                            android:id="@+id/edt_first_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:layout_below="@+id/tv_first_name"
+                            app:fontNameET="@string/font_light"
+                            android:textColor="@color/lightgrey"
+                            android:inputType="textCapSentences"/>
+
+                        <View
+                            android:id="@+id/sep_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/lightgrey"
+                            android:layout_below="@id/edt_first_name">
+                        </View>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/rel_last_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_below="@+id/rel_first_name">
+                        <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+                            android:id="@+id/tv_last_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:customTypeface="@string/font_bold"
+                            android:text="Last Name"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/white"/>
+
+                        <com.thunderbird.chennai.fapapp.Utility.EditTextK
+                            android:id="@+id/edt_last_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:layout_below="@+id/tv_last_name"
+                            app:fontNameET="@string/font_light"
+                            android:textColor="@color/lightgrey"
+                            android:inputType="textCapSentences"/>
+
+                        <View
+                            android:id="@+id/sep_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/lightgrey"
+                            android:layout_below="@id/edt_last_name">
+                        </View>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/rel_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rel_last_name"
+                        android:layout_margin="5dp">
+                        <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+                            android:id="@+id/tv_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:customTypeface="@string/font_bold"
+                            android:text="Email"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/white"/>
+
+                        <com.thunderbird.chennai.fapapp.Utility.EditTextK
+                            android:id="@+id/edt_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:layout_below="@+id/tv_email"
+                            app:fontNameET="@string/font_light"
+                            android:textColor="@color/lightgrey"
+                            android:inputType="textEmailAddress"/>
+
+                        <View
+                            android:id="@+id/sep_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/lightgrey"
+                            android:layout_below="@id/edt_email">
+                        </View>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/rel_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rel_email"
+                        android:layout_margin="5dp">
+                        <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+                            android:id="@+id/tv_password"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:customTypeface="@string/font_bold"
+                            android:text="Password"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/white"/>
+
+                        <com.thunderbird.chennai.fapapp.Utility.EditTextK
+                            android:id="@+id/edt_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:layout_below="@+id/tv_password"
+                            app:fontNameET="@string/font_light"
+                            android:textColor="@color/lightgrey"
+                            android:inputType="textPassword"/>
+
+                        <View
+                            android:id="@+id/sep_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/lightgrey"
+                            android:layout_below="@id/edt_password"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/rel_confirm_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rel_password"
+                        android:layout_margin="5dp">
+                        <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+                            android:id="@+id/tv_confirm_password"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:customTypeface="@string/font_bold"
+                            android:text="Confirm Password"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/white"/>
+
+                        <com.thunderbird.chennai.fapapp.Utility.EditTextK
+                            android:id="@+id/edt_confirm_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:layout_below="@+id/tv_confirm_password"
+                            app:fontNameET="@string/font_light"
+                            android:textColor="@color/lightgrey"
+                            android:inputType="textPassword"/>
+
+                        <View
+                            android:id="@+id/sep_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/lightgrey"
+                            android:layout_below="@id/edt_confirm_password"/>
+                    </RelativeLayout>
+
+                    <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+                        android:id="@+id/btn_next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Next"
+                        android:textSize="20dp"
+                        android:layout_below="@id/rel_confirm_password"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/butn1"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingRight="30dp"
+                        android:paddingLeft="30dp"
+                        android:textColor="@android:color/white"
+                        app:customTypeface="@string/font_bold"/>
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

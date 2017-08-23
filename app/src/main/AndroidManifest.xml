@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.thunderbird.chennai.fapapp">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- VERY IMPORTANT! Don't forget this permission, or in-app billing won't work. -->
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activities.SplashActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activities.RegistationOne"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activities.RegistrationTwo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activities.RegistrationPayment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.RegSelectEquip"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.PhotographerListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.ProfileActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Activities.ProfileActivitys"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.FilterActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="41807d4eabd028ed826385b1efc3bd654261bcf1" />
+
+        <activity
+            android:name=".Activities.InfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.TandCActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.FeedbackActivity"
+            android:label="@string/title_activity_feedback"
+            android:theme="@style/AppTheme"></activity>
+    </application>
+
+</manifest>

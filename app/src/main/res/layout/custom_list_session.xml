@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/li_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+            android:id="@+id/tv_session"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Afternoon"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            app:customTypeface="@string/font_regular"
+            android:layout_gravity="center"/>
+
+        <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+            android:id="@+id/tv_session_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="30-01-2017"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            app:customTypeface="@string/font_regular"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center">
+            <ImageView
+                android:id="@+id/img_delete_session"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/ic_delete_black_24dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/li_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+            android:id="@+id/tv_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="13dp"
+            app:customTypeface="@string/font_regular"
+            android:layout_gravity="center"
+            android:textColor="@color/grey"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

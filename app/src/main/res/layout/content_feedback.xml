@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/fab_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    tools:showIn="@layout/activity_feedback">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="E-Mail*"
+                    android:textColor="@color/white"
+
+                    />
+
+                <EditText
+                    android:id="@+id/txtEmail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:inputType="textNoSuggestions"
+                    android:background="#d3d3d3"
+                    android:ems="10"
+                    android:textSize="15dp"
+                    android:padding="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Suggestion/Feedback*"
+                    android:textColor="@color/white" />
+
+                <EditText
+                    android:id="@+id/txtFeddback"
+                    android:layout_width="fill_parent"
+                    android:layout_height="120dp"
+
+                    android:background="#d3d3d3"
+                    android:ems="10"
+                    android:textSize="15dp"
+                    android:inputType="textMultiLine|textNoSuggestions"
+                    android:padding="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnClear"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/white"
+                    android:text="Clear" />
+
+                <Button
+                    android:id="@+id/btnSend"
+                    android:layout_width="100dp"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Send" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:text="Note : Non personal inforamtion that can help us debud will be include in this message"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black"
+    tools:context="com.thunderbird.chennai.fapapp.Fragments.EventFragment">
+
+    <ListView
+        android:layout_below="@+id/rel_header"
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+    </ListView>
+
+
+    <TextView
+        android:id="@+id/txtMessage"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16dp"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:padding="15dp"
+        android:text="Your profile will not be listed in Filter Search until you book your events"/>
+
+</RelativeLayout>

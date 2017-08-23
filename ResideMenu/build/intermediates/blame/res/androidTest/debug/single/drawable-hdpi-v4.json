@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/Harish/StudioProjects/Photographer/ResideMenu/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/logo1.png",
+        "source": "/Users/Harish/StudioProjects/Photographer/ResideMenu/build/intermediates/bundles/debug/res/drawable-hdpi-v4/logo1.png"
+    },
+    {
+        "merged": "/Users/Harish/StudioProjects/Photographer/ResideMenu/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/shadow.png",
+        "source": "/Users/Harish/StudioProjects/Photographer/ResideMenu/build/intermediates/bundles/debug/res/drawable-hdpi-v4/shadow.png"
+    },
+    {
+        "merged": "/Users/Harish/StudioProjects/Photographer/ResideMenu/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/logowhite.png",
+        "source": "/Users/Harish/StudioProjects/Photographer/ResideMenu/build/intermediates/bundles/debug/res/drawable-hdpi-v4/logowhite.png"
+    },
+    {
+        "merged": "/Users/Harish/StudioProjects/Photographer/ResideMenu/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/ic_launcher.png",
+        "source": "/Users/Harish/StudioProjects/Photographer/ResideMenu/build/intermediates/bundles/debug/res/drawable-hdpi-v4/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/Harish/StudioProjects/Photographer/ResideMenu/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/logo.png",
+        "source": "/Users/Harish/StudioProjects/Photographer/ResideMenu/build/intermediates/bundles/debug/res/drawable-hdpi-v4/logo.png"
+    }
+]

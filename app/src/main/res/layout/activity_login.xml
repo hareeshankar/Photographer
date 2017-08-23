@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:isScrollContainer="false"
+        android:background="@drawable/bg1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <RelativeLayout
+                android:id="@+id/rel_logo"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/logo" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/rel_logo"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="18dp">
+
+                    <RelativeLayout
+                        android:id="@+id/rel_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+                            android:id="@+id/tv_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Email"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp"
+                            app:customTypeface="@string/font_bold" />
+
+                        <com.thunderbird.chennai.fapapp.Utility.EditTextK
+                            android:id="@+id/edt_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_email"
+                            android:background="@android:color/transparent"
+                            android:textColor="@color/lightgrey"
+                            app:fontNameET="@string/font_light"
+                            android:inputType="textEmailAddress"/>
+
+                        <View
+                            android:id="@+id/sep_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_below="@id/edt_email"
+                            android:background="@color/lightgrey"></View>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rel_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rel_email"
+                        android:layout_marginTop="5dp">
+
+                        <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+                            android:id="@+id/tv_password"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Password"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp"
+                            app:customTypeface="@string/font_bold" />
+
+                        <com.thunderbird.chennai.fapapp.Utility.EditTextK
+                            android:id="@+id/edt_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_password"
+                            android:background="@android:color/transparent"
+                            android:inputType="textPassword"
+                            android:textColor="@color/lightgrey"
+                            app:fontNameET="@string/font_light"
+                            />
+
+                        <View
+                            android:id="@+id/sep_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_below="@id/edt_password"
+                            android:background="@color/lightgrey" />
+                    </RelativeLayout>
+
+                    <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+                        android:id="@+id/tv_forgot_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/rel_password"
+                        android:layout_margin="5dp"
+                        android:text="Forgot Password?"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp"
+                        app:customTypeface="@string/font_bold" />
+
+                    <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+                        android:id="@+id/btn_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_forgot_password"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/butn1"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:paddingTop="10dp"
+                        android:text="login"
+                        android:textColor="@android:color/white"
+                        android:textSize="20dp"
+                        app:customTypeface="@string/font_bold" />
+
+                    <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+                        android:id="@+id/tv_sign_up"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/btn_login"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="40dp"
+                        android:text="Sign Up"
+                        android:textColor="@android:color/white"
+                        android:textSize="20dp"
+                        app:customTypeface="@string/font_regular" />
+
+
+                   <!-- <RelativeLayout
+                        android:id="@+id/rel_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_sign_up"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="30dp">
+
+                        <com.nedfptra.Utility.TypefaceTextView
+                            android:id="@+id/tv_login_via"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Or login via"
+                            android:textColor="@android:color/white"
+                            android:textSize="20dp"
+                            app:customTypeface="@string/font_light" />
+
+                        <ImageView
+                            android:id="@+id/img_facebook"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:layout_toRightOf="@+id/tv_login_via"
+                            android:src="@drawable/facebooklogo" />
+                    </RelativeLayout>-->
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

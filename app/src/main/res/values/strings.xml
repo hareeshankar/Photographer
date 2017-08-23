@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">FAPP</string>
+    <string name="font_regular">fonts/OrkneyRegular.otf</string>
+    <string name="font_bold">fonts/OrkneyBold.otf</string>
+    <string name="font_medium">fonts/OrkneyMedium.otf</string>
+    <string name="font_light">fonts/OrkneyLight.otf</string>
+    <string name="first_name">Enter first name</string>
+    <string name="last_name">Enter last name</string>
+    <string name="email">Enter email</string>
+    <string name="password">Enter password</string>
+    <string name="confirm_password">Confirm your password</string>
+    <string name="password_mismatch">Password does not match the confirm password</string>
+    <string name="valid_email">Enter valid email</string>
+    <string name="internet_message">No internet connected</string>
+    <string name="register_purchase">Payment is required for registration</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="no_data">No data</string>
+    <string name="server_problem">Server problem</string>
+    <string name="email_id_or_password_does_not_exists">Email id or password does not exists</string>
+    <string name="email_already_exists">Email already exists</string>
+    <string name="update_successfully">Successfully updated</string>
+    <string name="successfully_added">Successfully added</string>
+    <string name="password_sent">Password sent to your email</string>
+    <string name="mail_problem">Mailing problem</string>
+    <string name="email_does_not_exists">Email does not exists</string>
+    <string name="title_activity_feedback">FeedbackActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

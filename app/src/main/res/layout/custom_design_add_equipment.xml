@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rel_header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorAccent">
+
+        <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+            android:id="@+id/tv_city_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Add Equipments"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:customTypeface="@string/font_bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/fab_margin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+           >
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinnerSelectEquipment"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:backgroundTintMode="multiply"
+                android:backgroundTint="@color/colorPrimaryDark"
+                />
+
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/edtSelectSpeciality"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:backgroundTintMode="multiply"
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:hint="Select Speciality"
+                android:focusable="false"
+                android:gravity="left"
+
+                />
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+        <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/butn1"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:text="Add"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            app:customTypeface="@string/font_bold" />
+    </LinearLayout>
+
+</LinearLayout>

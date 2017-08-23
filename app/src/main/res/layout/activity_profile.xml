@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+  >
+    <LinearLayout
+        android:id="@+id/TabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/rel_profile_info"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <RelativeLayout
+            android:id="@+id/rel_speciality"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+
+                <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+                    android:id="@+id/tv_speciality"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:text="Speciality"
+                    android:textColor="@color/darkgrey"
+                    android:textSize="16sp"
+                    app:customTypeface="@string/font_regular" />
+
+                <View
+                    android:id="@+id/s_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="5dp"
+                    android:layout_alignEnd="@+id/tv_speciality"
+                    android:layout_alignLeft="@+id/tv_speciality"
+                    android:layout_alignRight="@+id/tv_speciality"
+                    android:layout_alignStart="@+id/tv_speciality"
+                    android:layout_below="@+id/tv_speciality"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/darker_gray"></View>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_equipment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+
+                <View
+                    android:id="@+id/e_below"
+                    android:layout_width="wrap_content"
+                    android:layout_height="5dp"
+                    android:layout_alignEnd="@+id/tv_equipment"
+                    android:layout_alignLeft="@+id/tv_equipment"
+                    android:layout_alignRight="@+id/tv_equipment"
+                    android:layout_alignStart="@+id/tv_equipment"
+                    android:layout_below="@id/tv_equipment"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/darker_gray"
+                    android:visibility="gone"
+                    ></View>
+
+                <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+                    android:id="@+id/tv_equipment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:text="Equipment"
+                    android:textColor="@color/darkgrey"
+                    android:textSize="16sp"
+                    app:customTypeface="@string/font_regular"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_photos"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+
+                <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+                    android:id="@+id/tv_photos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:text="Photos"
+                    android:textColor="@color/darkgrey"
+                    android:textSize="16sp"
+                    app:customTypeface="@string/font_regular" />
+
+                <View
+                    android:id="@+id/p_below"
+                    android:layout_width="wrap_content"
+                    android:layout_height="5dp"
+                    android:layout_alignEnd="@+id/tv_photos"
+                    android:layout_alignLeft="@+id/tv_photos"
+                    android:layout_alignRight="@+id/tv_photos"
+                    android:layout_alignStart="@+id/tv_photos"
+                    android:layout_below="@id/tv_photos"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/darker_gray"
+                    android:visibility="gone"
+                    ></View>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/TabLayout"></FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_profile_info"
+        android:layout_width="match_parent"
+        android:layout_height="265dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+
+        <ImageView
+            android:id="@+id/img_blur"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/avtar"
+            android:scaleType="centerCrop"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#99000000"/>
+
+        <ImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/avtar1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/profile_image"
+            android:text="Frank Harley"
+            android:textSize="15dp"
+            android:textColor="@android:color/white"
+            app:customTypeface="@string/font_bold"/>
+
+        <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:textSize="12dp"
+
+            android:text="Glebe,chennai"
+            android:textColor="@android:color/white"
+            app:customTypeface="@string/font_regular"/>
+
+        <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+        android:id="@+id/btn_contact_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/butn2"
+        android:text="Contact me"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_address"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/white"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        app:customTypeface="@string/font_regular"/>
+
+        <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+            android:id="@+id/btn_verify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/butn2"
+            android:text="Verified Partner"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/btn_contact_me"
+            android:paddingRight="20dp"
+            android:visibility="gone"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/white"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            app:customTypeface="@string/font_regular"/>
+
+        <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+            android:id="@+id/tv_email"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_address"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:textSize="12dp"
+            android:text="Glebe,chennai"
+            android:textColor="@android:color/white"
+            app:customTypeface="@string/font_regular"/>
+
+        <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_email"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:visibility="gone"
+            android:textSize="12dp"
+            android:text="Glebe,chennai"
+            android:textColor="@android:color/white"
+            app:customTypeface="@string/font_regular"/>
+
+        <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            app:customTypeface="@string/font_regular"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:layout_margin="10dp"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/btn_menu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/menu"
+            android:visibility="gone"/>
+
+        <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+            android:id="@+id/tv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            app:customTypeface="@string/font_regular"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:layout_margin="10dp"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/myviewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="#CC000000"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/expanded_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:contentDescription=""
+
+        android:background="#CC000000"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

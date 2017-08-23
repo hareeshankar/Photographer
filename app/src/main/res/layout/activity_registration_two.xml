@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_registration_two"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chennai.fapapp.Activities.RegistrationTwo"
+    android:background="@drawable/bg1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:isScrollContainer="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rel_header"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/black">
+
+                <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+                    android:id="@+id/btn_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="Back"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    app:customTypeface="@string/font_regular" />
+
+                <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+                    android:id="@+id/tv_city_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="REGISTRATION"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    app:customTypeface="@string/font_bold" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/rel_header"
+                android:layout_margin="20dp">
+
+                <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+                    android:id="@+id/tv_hello"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Hello David,"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp"
+                    app:customTypeface="@string/font_bold" />
+
+                <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+                    android:id="@+id/tv_hello_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_hello"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="20dp"
+                    android:text="We need some more information about yourself and about your work."
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    app:customTypeface="@string/font_regular" />
+
+                <RelativeLayout
+                    android:id="@+id/rel_phone_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_hello_desc"
+                    android:layout_margin="5dp">
+
+                    <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+                        android:id="@+id/tv_phone_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Phone Number"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"
+                        app:customTypeface="@string/font_bold" />
+
+                    <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+                        android:id="@+id/tv_country_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+91"
+                        android:textColor="@color/lightgrey"
+                        app:customTypeface="@string/font_light"
+                        android:layout_below="@+id/tv_phone_no"/>
+
+                    <com.thunderbird.chennai.fapapp.Utility.EditTextK
+                        android:id="@+id/edt_phone_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_phone_no"
+                        android:background="@android:color/transparent"
+                        android:inputType="phone"
+                        android:maxLength="10"
+                        android:textColor="@color/lightgrey"
+                        app:fontNameET="@string/font_light"
+                        android:layout_marginLeft="20dp"
+                       android:layout_toRightOf="@+id/tv_country_code"/>
+
+                    <View
+                        android:id="@+id/sep_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@id/edt_phone_no"
+                        android:background="@color/lightgrey"></View>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_company_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rel_phone_no"
+                    android:layout_margin="5dp">
+
+                    <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+                        android:id="@+id/tv_company_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Company Name"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"
+                        app:customTypeface="@string/font_bold" />
+
+                    <com.thunderbird.chennai.fapapp.Utility.EditTextK
+                        android:id="@+id/edt_company_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_company_name"
+                        android:background="@android:color/transparent"
+                        android:textColor="@color/lightgrey"
+                        app:fontNameET="@string/font_light"
+                        android:inputType="text"/>
+
+                    <View
+                        android:id="@+id/sep_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@id/edt_company_name"
+                        android:background="@color/lightgrey"></View>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rel_company_name"
+                    android:layout_margin="5dp">
+
+                    <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+                        android:id="@+id/tv_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Address"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"
+                        app:customTypeface="@string/font_bold" />
+
+                    <com.thunderbird.chennai.fapapp.Utility.EditTextK
+                        android:id="@+id/edt_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_address"
+                        android:background="@android:color/transparent"
+                        android:textColor="@color/lightgrey"
+                        app:fontNameET="@string/font_light"
+                        android:inputType="text"/>
+
+                    <View
+                        android:id="@+id/sep_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@id/edt_address"
+                        android:background="@color/lightgrey"></View>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rel_address"
+                    android:layout_margin="5dp">
+
+                    <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+                        android:id="@+id/tv_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="State"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"
+                        app:customTypeface="@string/font_bold" />
+
+                    <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+                        android:id="@+id/edt_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_state"
+                        android:background="@android:color/transparent"
+                        android:drawableRight="@drawable/downarrow"
+                        android:text="Select the state"
+                        android:textColor="@color/lightgrey"
+                        app:fontNameET="@string/font_light" />
+
+                    <Spinner
+                        android:id="@+id/sp_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_state"
+                        android:visibility="invisible">
+
+                    </Spinner>
+
+                    <View
+                        android:id="@+id/sep_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@id/edt_state"
+                        android:background="@color/lightgrey" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rel_state"
+                    android:layout_margin="5dp">
+
+                    <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+                        android:id="@+id/tv_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="City"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"
+                        app:customTypeface="@string/font_bold" />
+
+                    <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+                        android:id="@+id/edt_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_city"
+                        android:background="@android:color/transparent"
+                        android:drawableRight="@drawable/downarrow"
+                        android:text="Select the_city"
+                        android:textColor="@color/lightgrey"
+                        app:fontNameET="@string/font_light" />
+
+                    <Spinner
+                        android:id="@+id/sp_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_city"
+                        android:visibility="invisible">
+
+                    </Spinner>
+
+                    <View
+                        android:id="@+id/sep_7"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@id/edt_city"
+                        android:background="@color/lightgrey" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rel_city"
+                    android:layout_margin="5dp">
+
+                    <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+                        android:id="@+id/tv_area"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Area"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"
+                        app:customTypeface="@string/font_bold" />
+
+                    <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+                        android:id="@+id/edt_area"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_area"
+                        android:background="@android:color/transparent"
+                        android:drawableRight="@drawable/downarrow"
+                        android:text="Select the area"
+                        android:textColor="@color/lightgrey"
+                        app:fontNameET="@string/font_light" />
+
+                    <Spinner
+                        android:id="@+id/sp_area"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_area"
+                        android:visibility="invisible">
+
+                    </Spinner>
+
+                    <View
+                        android:id="@+id/sep_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@id/edt_area"
+                        android:background="@color/lightgrey" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rel_area"
+                    android:layout_margin="5dp">
+
+                    <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+                        android:id="@+id/tv_country"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Country"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"
+                        app:customTypeface="@string/font_bold" />
+
+                    <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+                        android:id="@+id/edt_country"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_country"
+                        android:background="@android:color/transparent"
+                        android:inputType="textCapSentences"
+                        android:textColor="@color/lightgrey"
+                        app:fontNameET="@string/font_light"
+                        android:drawableRight="@drawable/downarrow"
+                        android:text="Select the country"/>
+
+                    <Spinner
+                        android:id="@+id/sp_country"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_country"
+                        android:visibility="invisible">
+                    </Spinner>
+
+                    <View
+                        android:id="@+id/sep_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@id/edt_country"
+                        android:background="@color/lightgrey" />
+                </RelativeLayout>
+
+                <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+                    android:id="@+id/btn_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rel_country"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/butn1"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:paddingTop="10dp"
+                    android:text="Register"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    app:customTypeface="@string/font_bold" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

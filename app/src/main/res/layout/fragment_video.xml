@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black"
+    tools:context="com.thunderbird.chennai.fapapp.Fragments.VideoFragment">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/btn_add">
+    </android.support.v7.widget.RecyclerView>
+    <TextView
+        android:id="@+id/txtMessage"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16dp"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:padding="15dp"
+        android:text="No User Videography Found"/>
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent"
+        android:text="Add Video"
+        android:textColor="@color/white">
+
+    </Button>
+</RelativeLayout>

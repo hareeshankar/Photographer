@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@color/black"
+
+            android:orientation="vertical">
+
+            <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+                android:id="@+id/tv_date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="29/05"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/white"></View>
+
+            <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+                android:id="@+id/tv_year"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="2017"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+        </LinearLayout>
+<View
+    android:layout_width="1dp"
+    android:paddingLeft="5dp"
+    android:background="#404040"
+    android:layout_height="fill_parent"></View>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="left|center"
+            android:orientation="vertical"
+            android:background="@color/black"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp">
+            <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+                android:id="@+id/tv_event"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="Bhai ki Sadi"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:customTypeface="@string/font_regular" />
+
+            <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+                android:id="@+id/tv_ep_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="Bhai ki Sadi"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                app:customTypeface="@string/font_regular" />
+
+            <com.thunderbird.chennai.fapapp.Utility.TypefaceTextView
+                android:id="@+id/tv_session"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Afternoon"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                android:textColor="@color/white"
+                app:customTypeface="@string/font_regular" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+
+        android:background="#404040"
+        android:layout_height="1dp"></View>
+
+</LinearLayout>
